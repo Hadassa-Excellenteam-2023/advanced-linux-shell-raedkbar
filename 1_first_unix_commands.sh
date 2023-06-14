@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 1. Create a text file in your home folder and write your name in it:
 #    Method 1: Use the echo command and redirect the output to a file.
 echo "raedba" > ~/name.txt
@@ -14,8 +16,8 @@ cp ~/name.txt ~/new/
 # 4. Rename the file to your name:
 mv ~/new/name.txt ~/new/raedba.txt
 
-# 5. Edit the file using gedit - write your name and your favorite animal in it:
-gedit ~/new/raedba.txt
+# 5. Edit the file using nano - write your name and your favorite animal in it:
+nano ~/new/raedba.txt
 
 # 6. Create a new file under the "new" directory that will contain the same content as the file you edited, and will be called "newFile":
 #    Method 1: Use the cp command to copy the contents of the existing file.
@@ -37,7 +39,7 @@ cd /home/raedba
 
 # 9. Delete the "new" directory along with all the files that exist in it:
 #    Method 1: Use the rm command with the -r flag to remove the directory and its contents.
-rm -r ~/new
+rm -rf ~/new
 
 #    Method 2: Use the rmdir command with the --ignore-fail-on-non-empty flag to remove the directory and its contents.
 rmdir --ignore-fail-on-non-empty ~/new
